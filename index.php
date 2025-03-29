@@ -44,7 +44,7 @@ $flights = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <p><strong>Heure :</strong> <?= htmlspecialchars($flight['flight_time']) ?></p>
         <p class="price"><?= htmlspecialchars($flight['price']) ?> Milles</p>
 
-        
+        <!-- Lien de réservation -->
         <?php if (isset($_SESSION['user_id'])) : ?>
           <a href="../Reservation_en_ligne/pages/reserve.php?flight_id=<?= $flight['id'] ?>" class="book-btn">Réserver</a>
         <?php else : ?>

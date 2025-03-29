@@ -4,7 +4,7 @@ include('../db.php');
 
 
 $flight_id = isset($_SESSION['reserved_flight_id']) ? $_SESSION['reserved_flight_id'] : null;
-var_dump($flight_id);
+
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
